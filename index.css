@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-image img {
+    width:100%;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+/* GENERAL STYLES */
+
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-position: no-repeat;
+    background-color: #e0e8ff;
+    min-height: 100vh;
+    font-family: "Red Hat Display";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* UTILITY CLASSES */
+
+.highlight {
+    font-weight: bold;
+}
+.grey {
+    color: grey;
+    font-weight: 600;
+}
+
+/* CARD DETAILS */
+
+.order-preview-card {
+    margin: 1rem 0;
+    width : 400px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:.5rem;
+}
+.order-summary {
+    padding: 1rem 2rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.order-summary p{
+    color: gray;
+}
+.music-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+/* SUBSCRIPTION DETAILS */
+
+.sub-detail {
+   background-color: hsl(225, 100%, 98%);
+   border-radius: .5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin:0 3rem;
+   padding: 1rem;
+}
+.sub-detail a{
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+.sub-detail a:hover,
+.sub-detail a:focus {
+    color: grey;
+}
+
+/* BUTTON PROPERTIES */
+
+.payment-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 3rem;
+}
+.proceed-payment {
+    margin-top: 1.5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color:hsl(245, 75%, 52%);
+    box-shadow: 0 6px 5px -5px #333;
+    color: #fff;
+    font-weight: 600;
+}
+.proceed-payment:hover,
+.proceed-payment:focus {
+    background-color: hsl(224, 23%, 55%);
+}
+.payment-cancel {
+    margin:1.5rem 0 2rem 0;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+}
+.payment-cancel:hover,
+.payment-cancel:focus {
+    color: grey;
+}
